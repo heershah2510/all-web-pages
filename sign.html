@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sign Up</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html>
+<head>
+    <title>Sign Up and Login</title>
+    <style>
+        .password-container {
+            position: relative;
+            display: inline-block;
+        }
+        .password-input {
+            padding-right: 30px; /* Space for the eye icon */
+        }
+        .eye-symbol {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            pointer-events: none; /* Makes the eye icon non-clickable */
+        }
+    </style>
+</head>
+<body>
+    <h2>Sign Up</h2>
+    <form action="login.html" method="post">
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username" placeholder="Enter your username" required><br><br>
+        
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+        
+        <label for="password">Password:</label><br>
+        <div class="password-container">
+            <input type="password" id="password" class="password-input" name="password" placeholder="Enter your password" required>
+            <span class="eye-symbol">👁️</span>
+        </div>
+        <br><br>
+        
+        <input type="checkbox" id="terms" name="terms" required>
+        <label for="terms">I agree to the terms and conditions</label><br><br>
+        
+        <button type="submit">Sign Up</button>
+    </form>
+    
+
+</body>
+</html>
